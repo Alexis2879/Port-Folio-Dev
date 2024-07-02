@@ -15,13 +15,35 @@ code {
     margin: 0 auto;
 }
 
+/* Barra de Navegación*/
 .header {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
     height: 132px;
+    border-bottom: 3px solid black;
+    margin-bottom: 35px;
 }
 
 .header .logo{
     flex-grow: 2;
+    display: flex;
+}
+
+.header .logo span{
+    display: block;
+    font-size: 80px;
+    font-weight: bolder;
+    margin-top: -2px;
+}
+
+.header .logo h3 {
+    display: block;
+    flex-basis: 40px;
+    margin-left: 5px;
+    font-weight: 300;
+    text-transform: uppercase;
 }
 
 .header nav {
@@ -50,6 +72,109 @@ code {
     transition: all 300ms;
 }
 
+.header .active,
 .header a:hover{
     color: #fa4529;
+    border-bottom: 1px solid #fa4529;
+}
+
+/* Seccion Contenido*/
+.content {
+    min-height: 400px;
+}
+
+/* Sección Footer*/
+
+.footer{
+    min-height: 40px;
+    line-height: 5px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 80px;
+    padding-top: 30px;
+    border-top: 3px solid Black;
+    background: #f5f5f5;
+    color: #444;
+}
+
+/* Estilos de la pagina inicio*/
+.home h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 60px;
+    margin-bottom: 0px;
+    margin-top: 80px;
+}
+
+.home strong{
+    color: #fa4529;
+}
+
+.home h2{
+    color: rgb(98, 97, 97);
+    font-weight: lighter;
+}
+
+.home a{
+    /*padding: 2px;*/
+    border-radius: 5px;
+    color: white;
+    background-color: #fa4529;
+    text-decoration: none;
+    transition: all 300ms;
+}
+
+
+.page .heading,
+.home .heading {
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 0px;
+}
+
+.page .heading {
+    font-size: 55px;
+    font-weight: bold;
+}
+
+
+.home p{
+    color:  rgb(98, 97, 97);
+}
+
+
+/* estilos de Contacto ---Formulario---  */
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: block;
+    padding: 15px;
+    margin-top: 25px;
+    width: 400px;
+}
+
+input[type="submit"],
+button {
+    font-size: 15px;
+    padding: 15px;
+    width: 200px;
+    margin-top: 15px;
+    border: 0px;
+    border-radius: 5px;
+    color: white;
+    background-color: #fa4529;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+.home a:hover,
+input[type="submit"]:hover,
+button:hover{
+    background-color: rgb(29, 137, 26);
 }
